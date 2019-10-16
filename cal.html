@@ -5,46 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="todo.css">
+    <!-- <link rel="stylesheet" href="todo.css"> -->
     <title>To Do List</title>
     <link rel="stylesheet" href="cl.css">
+    <script src="cal.js"></script>
 </head>
 
 <body>
     <section>
-        <div>
+        <div class="allButton">
             <input type="text" class="resulte" id="resulte" value="0">
         </div>
         <div class="div1" id="div1">
-            <input type="button" value="AC" class="button">
-            <input type="button" value="+/-" class="button">
-            <input type="button" value="%" class="button">
-            <input type="button" value="÷" class="button button_Yellow" id="button_Yellow">
+            <input type="button" value="AC" class="button" onclick="delIN()">
+            <input type="button" value="+/-" class="button" onclick="insert('-');">
+            <input type="button" value="%" class="button" onclick="insert('%');">
+            <input type="button" value="÷" class="button button_Yellow" id="button_Yellow" onclick="insert('/');">
         </div>
         <div class="div2" id="div2" class="button">
-            <input type="button" value="7" class="button button_gray">
-            <input type="button" value="8" class="button button_gray">
-            <input type="button" value="9" class="button button_gray">
-            <input type="button" value="&#215" class="button button_Yellow">
+            <input type="button" value="7" class="button button_gray" onclick="insert(7);">
+            <input type="button" value="8" class="button button_gray" onclick="insert(8);">
+            <input type="button" value="9" class="button button_gray" onclick="insert(9);">
+            <input type="button" value="&#215" class="button button_Yellow" onclick="insert('*');">
         </div>
         <div class="div3" id="div3">
-            <input type="button" value="4" class="button button_gray">
-            <input type="button" value="5" class="button  button_gray">
-            <input type="button" value="6" class="button  button_gray">
-            <input type="button" value="-" class="button button_Yellow">
+            <input type="button" value="4" class="button button_gray" onclick="insert(4);">
+            <input type="button" value="5" class="button  button_gray" onclick="insert(5);">
+            <input type="button" value="6" class="button  button_gray" onclick="insert(6);">
+            <input type="button" value="-" class="button button_Yellow" onclick="insert('-');">
         </div>
 
         <div class="div4" id="div4">
-            <input type="button" value="1" class="button button_gray">
-            <input type="button" value="2" class="button button_gray">
-            <input type="button" value="3" class="button button_gray">
-            <input type="button" value="+" class="button button_Yellow">
+            <input type="button" value="1" class="button button_gray" onclick="insert(1);">
+            <input type="button" value="2" class="button button_gray" onclick="insert(2);">
+            <input type="button" value="3" class="button button_gray" onclick="insert(3);">
+            <input type="button" value="+" class="button button_Yellow" onclick="insert('+');">
         </div>
         <div class="div5" id="div5">
-            <input type="button" value="0" class="button button_gray">
-            <input type="button" value="0" class="button button_gray">
-            <input type="button" value="." class="button button_gray">
-            <input type="button" value="=" class="button button_Yellow">
+            <input type="button" value="0" id="zero" class="button button_gray" onclick="insert(0);">
+            <!-- <input type="button" value="0" class="button button_gray"> -->
+            <input type="button" value="." class="button button_gray" onclick="insert('.');">
+            <input type="button" value="=" class="button button_Yellow" onclick="equal();">
         </div>
     </section>
 </body>
